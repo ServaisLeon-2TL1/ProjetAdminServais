@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y bind9 && apt-get install -y dnsutils
 
 # Copy configuration files
 COPY named.conf.options /etc/bind/
-COPY named.conf.local. /etc/bind/zones/master
+COPY named.conf.local /etc/bind/zones/master
 COPY db.servais /etc/bind/zones
 
 
